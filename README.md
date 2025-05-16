@@ -24,18 +24,26 @@ A machine learning-based Java application that predicts a user's stress level ba
 ## 📂 Project Structure
 ```
 StressPrediction/
-├── data/
-│ └── trimmed_anxiety_dataset.csv # Cleaned and categorized input data
-├── src/
-│ ├── DataProcessorImpl.java
-│ ├── DecisionTreeModel.java
-│ ├── RandomForestModel.java
-│ ├── StressPredictorImpl.java
-│ ├── RecommendationEngineImpl.java
-│ ├── GraphGeneratorImpl.java
-│ ├── Main.java # Entry point with CLI loop
-│ └── TestComponent.java / TestUnit.java
+│── trimmed_anxiety_dataset.csv # Cleaned and categorized input data
+├── anxiety_attack_dataset.csv # original complete dataset
+├── DataProcessor.java 
+│── DataProcessorImpl.java
+├── DecisionTreeNode.java 
+│── DecisionTreeModel.java
+├── GraphGenerator.java 
+│── GraphGeneratorImpl.java
+│── RandomForestModel.java
+├── RecommendationEngine.java 
+│── RecommendationEngineImpl.java
+├── StressPredictor.java 
+│── StressPredictorImpl.java
+│── Main.java # Main file for user interface in terminal 
+│── TestComponent.java 
+│── TestUnit.java
 ├── radar_chart.py # Python radar chart visualizer
+├── verification.py # Python ML classifier
+├── distribution_chart/ # contains scatter shart for all features
+├── bin/ # contains class files for all java files
 └── README.md
 ```
 
