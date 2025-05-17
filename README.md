@@ -67,7 +67,7 @@ StressPrediction/
 ## 🧪 How to Run
 
 ### Compile,
-```javac -d bin src/*.java```
+```javac -d bin *.java```
 
 ### Run Main program,
 ```java -cp bin Main```
