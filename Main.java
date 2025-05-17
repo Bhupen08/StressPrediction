@@ -62,21 +62,13 @@ public class Main {
             System.out.println("\n💡 Recommendations:");
             recs.forEach(r -> System.out.println("- " + r));
 
-            // Ask for radar chart
-            System.out.print("\n📈 Would you like to display a radar chart? (y/n): ");
-            String radarResp = scanner.next();
-            if (radarResp.equalsIgnoreCase("y")) {
-                graphGen.generateRadarChart(input, filtered);
-                graphGen.displayGraph();
-            }
-
             // Ask to continue
             System.out.print("\n🔁 Would you like to predict again? (y/n): ");
             String again = scanner.next();
             continuePrediction = again.equalsIgnoreCase("y");
             System.out.println();
         }
-
+System.out.println("To generate a radar chart. Type python3 radar_chart.py");
         System.out.println("✅ Session ended. Thank you!");
     }
 }
